@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="logo">
-                clear<strong class="log">wave</strong>
+                clear<span class="log">wave</span>
             </div>
 
             <nav>
@@ -22,19 +22,21 @@
 
             <div>
                 <a href="#">Sign in</a>
-                <button class="header_button">Start Free Trial</button>
+                <button class="header-btn">Start Free Trial</button>
             </div>
         </header>
 
         <section id="hero">
-            <div class="abc">
-                🌟 Rated <strong>#1 Productivity SaaS</strong> of 2024
+            <div class="hero-badge">
+                🌟 Rated <span>#1 Productivity SaaS</span> of 2024
             </div>
 
-            <section class="hero_content">
+            <div class="hero_content">
                 <div>
                     <h1>
-                        Your workflow, <br> finally clear.
+                        Your workflow,
+                        <br>
+                        finally clear.
                     </h1>
 
                     <p>
@@ -43,28 +45,80 @@
                         noise, more done.
                     </p>
 
-                    <section class="hero_button">
+                    <div class="hero_button">
                         <div>
                             <button>Start Free - No Card →</button>
                         </div>
                         <div>
                             <button>▶ See in action</button>
                         </div>
-                    </section>
-
-                    <p>⛨ SOS 2 Certified | ⭍ 99.9% Uptime SLA | ≋ 50k+ Teams</p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="hero_photo">
-                <img src="images/abc.png" alt="image">
-            </section>
-        </section id="team">
+                <div class="team-card">
+                    <h3>Team Performance</h3>
 
-        <a href="#">Nexaflow</a>
-        <a href="#">◷ Meridian</a>
-        <a href="#">▲ Vanta Labs</a>
-        <a href="#">▬ Pulsar HQ</a>
+                    <div class="graph">
+                        <div class="bar short"></div>
+                        <div class="bar medium"></div>
+                        <div class="bar small"></div>
+                        <div class="bar tall"></div>
+                        <div class="bar medium"></div>
+                        <div class="bar tallest"></div>
+                        <div class="bar medium"></div>
+                        <div class="bar tall"></div>
+                    </div>
+
+                    <div class="statistics">
+                        <div class="box">
+                            <h2>94%</h2>
+                            <p>Task Rate</p>
+                            <span>+12%</span>
+                        </div>
+
+                        <div class="box">
+                            <h2>2.4k</h2>
+                            <p>Active Users</p>
+                            <span>+8%</span>
+                        </div>
+
+                        <div class="box">
+                            <h2>18h</h2>
+                            <p>Saved / week</p>
+                            <span>+24%</span>
+                        </div>
+                    </div>
+
+                    <div class="notification">
+                        <div class="icon">
+                            ★
+                        </div>
+
+                        <div class="notification-text">
+                            <h4>New Integration</h4>
+                            <p>Slack connected · just now</p>
+                        </div>
+                    </div>
+
+                    <div class="percentage">
+                        <h2>↑ 34%</h2>
+                        <p>Output this week</p>
+                    </div>
+
+                    <div class="hero-info">
+                        <span>✔ SOC 2 Certified</span>
+                        <span>✔ 99.9% Uptime SLA</span>
+                        <span>✔ 50k+ Teams</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <a href="#">Nexaflow</a>
+            <a href="#">◷ Meridian</a>
+            <a href="#">▲ Vanta Labs</a>
+            <a href="#">▬ Pulsar HQ</a>
         </section>
 
         <br>
@@ -74,27 +128,42 @@
         <section id="advertisement">
             <p>• MOBILE APP</p>
             <h1>
-                Your workspace, <br><strong>in your pocket</strong>
+                Your workspace,
+                <br>
+                <span>in your pocket</span>
             </h1>
             <p>
                 The Clearwave mobile app brings every dashboard, task,
                 and notification to you - beautifully adapted for any screen.
             </p>
 
-            <section id="gallery">
+            <div class="mobile-slider">
+                <button class="left-btn">◀</button>
+
+                <div class="dots">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+
+                <button class="right-btn">▶</button>
+            </div>
+
+            <div id="gallery">
                 <img src="images/tm-622-screen-05.jpg">
                 <img src="images/tm-622-screen-01.jpg">
                 <img src="images/tm-622-screen-02.jpg">
                 <img src="images/tm-622-screen-03.jpg">
                 <img src="images/tm-622-screen-04.jpg">
-            </section>
+            </div>
         </section>
 
         <section id="features">
             <p>• PLATFORM FEATURES</p>
             <h1>
-                Built for <strong>clarity</strong>
-                <br>at every scale
+                Built for <span>clarity</span>
+                <br>
+                at every scale
             </h1>
             <p>
                 Every feature is designed to reduce friection and
@@ -103,7 +172,7 @@
 
             <section class="feature1">
                 <div>
-                    <strong><small>01 - UNIFIED DASHBOARD</small></strong>
+                    <span><small>01 - UNIFIED DASHBOARD</small></span>
                     <h3>Every metric, one calm surface</h3>
                     <p>
                         Pull dates from any source into a single, composable
@@ -116,14 +185,41 @@
                         <li>Role-based sharing with granular permission</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/abc1.png">
+                <div class="feature1_dashboard">
+                    <div class="graph-card">
+                        <div class="card">
+                            <p>Monthly Revenue</p>
+                            <h4>$84.2K</h4>
+                            <div clas="progress-line"></div>
+                        </div>
+                        <div class="card">
+                            <p>Active Users</p>
+                            <h2>12,481</h2>
+                            <div class="progress-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="recent-card">
+                        <p>Recent Activity</p>
+                        <div class="activity">
+                            <p> Q3 Report synced</p>
+                            <button>Done</button>
+                        </div>
+                        <div class="activity">
+                            <p>Team review pending</p>
+                            <button>Active</button>
+                        </div>
+                        <div class="activity">
+                            <p>Analytics export</p>
+                            <button>Queued</button>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="feature2">
                 <div>
-                    <strong><small>02 - SMART AUTOMATION</small></strong>
+                    <span><small>02 - SMART AUTOMATION</small></span>
                     <h3><b>Routines that run</b><br>themselves</h3>
                     <p>
                         Build automation flows with natural language.
@@ -136,14 +232,45 @@
                         <li>Full audit trail of every action</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/abc2.png">
+                <div class="feature2_dashboard">
+                    <h4>
+                        Active Automation
+                    </h4>
+                    <div class="automation">
+                        <div class="auto-card">
+                            <p>Weekly digest → slack</p>
+                            <button>Running</button>
+                        </div>
+                        <div class="auto-card">
+                            <p>Lead scored → Notify sales</p>
+                            <button>Running</button>
+                        </div>
+                        <div class="auto-card">
+                            <p>Invoice due → Alert CFO</p>
+                            <button>Active</button>
+                        </div>
+                        <div class="auto-card">
+                            <p>Report sync → Drive</p>
+                            <button>Paused</button>
+                        </div>
+                    </div>
+                    <div class="auto_graph">
+                        <div class="saving">
+                            <p>Hours Saved This Month</p>
+                            <h3>148h</h3>
+                            <div clas="progress-line"></div>
+                        </div>
+                        <div class="flow">
+                            <p>Flows</p>
+                            <h3>24</h3>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="feature3">
                 <div>
-                    <strong><small>03 - TEAM COLLABORATION</small></strong>
+                    <span><small>03 - TEAM COLLABORATION</small></span>
                     <h3><b>Comments, context, and</b><br>clarity</h3>
                     <p>
                         Annotate anything, assign tasks inline, and
@@ -156,31 +283,112 @@
                         <li>Real-time presence and live cursors</li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/abc3.png">
+
+                <div class="feature3_dashboard">
+                    <div class="collaboration">
+                        <div class="top-card">
+                            <div class="online">
+                                <p>Online Now</p>
+
+                                <div class="members">
+                                    <span>A</span>
+                                    <span>C</span>
+                                    <span>M</span>
+                                    <span>+4</span>
+                                </div>
+                            </div>
+
+                            <div class="tasks">
+                                <p>Open Tasks</p>
+                                <h3>37</h3>
+                            </div>
+                        </div>
+
+                        <div class="recent-comments">
+                            <p>Recent Comments</p>
+
+                            <div class="comment">
+                                <p>Alex → Q3 chart updated</p>
+                                <button>Resolved</button>
+                            </div>
+
+                            <div class="comment">
+                                <p>Kim → Review needed</p>
+                                <button>Open</button>
+                            </div>
+
+                            <div class="comment">
+                                <p>Apps → Approved & shipped</p>
+                                <button>Done</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="metrics">
                 <div>
-                    <p><b>50</b><small><strong>k+</strong>+</small></p>
+                    <p><b>50</b><small><span>k+</span></small></p>
                     <p>Teams Worldwide</p>
                     <p>Across 80+ countries</p>
                 </div>
                 <div>
-                    <p><b>34</b><small><strong>%</strong></small></p>
+                    <p><b>34</b><small><span>%</span></small></p>
                     <p>Avg. Productivity Gain</p>
                     <p>Measured in first 30 days</p>
                 </div>
                 <div>
-                    <p><b>99.0</b><small><strong>%</strong></small></p>
+                    <p><b>99.0</b><small><span>%</span></small></p>
                     <p>Uptime SLA</p>
                     <p>Guranteed and monitored</p>
                 </div>
                 <div>
-                    <p><b>18</b><small><strong>h</strong></small></p>
+                    <p><b>18</b><small><span>h</span></small></p>
                     <p>Saved Per Team Weekly</p>
                     <p>On average across plans</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="pricing">
+            <section class="pricing-header">
+                <p>PRICING</p>
+                <h2>Simple, <span>transparent</span> pricing</h2>
+                <p>No hidden fees. No surprise overages. Cancel anytime.</p>
+
+                <div class="pricing-toggle">
+                    <span>Monthly</span>
+                    <input type="checkbox">
+                    <span>Annual</span>
+                    <small>Save 35%</small>
+                </div>
+            </section>
+
+            <section class="price-card">
+                <div>
+                    <P>STARTER</P>
+                    <h3>$<b>20</b><small>/mo</small></h3>
+                    <p>
+                        For individual and small teams
+                        getting started with structured
+                        workflows.
+                    </p>
+                </div>
+                <div>
+                    <P>PROFESSIONAL</P>
+                    <h3>$<b>60</b><small>/mo</small></h3>
+                    <p>
+                        For growing teams that need powerful
+                        automation and advanced reporting.
+                    </p>
+                </div>
+                <div>
+                    <P>ENTERPRISE</P>
+                    <h3>$<b>150</b><small>/mo</small></h3>
+                    <p>
+                        For large organizatons with custom
+                        requirements and comliance needs.
+                    </p>
                 </div>
             </section>
         </section>
